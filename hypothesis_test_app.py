@@ -1,10 +1,8 @@
+import streamlit as st
 import matplotlib.pyplot as plt
-import matplotlib.font_manager as fm
-
-# フォントファイルを直接指定
-font_path = "C:/Windows/Fonts/meiryo.ttc"   # フォントファイルの場所
-font_prop = fm.FontProperties(fname=font_path)
-plt.rcParams['font.family'] = font_prop.get_name()
+import japanize_matplotlib  # ★ これを追加するだけで日本語化対応
+import numpy as np
+from scipy import stats
 
 import streamlit as st
 import numpy as np
@@ -135,6 +133,7 @@ ax3.set_xlabel("成功数 k")
 ax3.set_ylabel("出現回数")
 ax3.legend()
 st.pyplot(fig3)
+
 
 
 
