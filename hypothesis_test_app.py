@@ -7,7 +7,7 @@ from scipy.stats import norm
 from scipy.stats import norm, binom
 
 # フォント設定（日本語対応）
-mpl.rcParams['font.family'] = 'IPAPGothic'  # 'Noto Sans CJK JP' でも可
+mpl.rcParams['font.family'] = 'MS Gothic'  # 'Noto Sans CJK JP' でも可
 
 st.title("仮説検定シミュレーション（数学B・統計的な推測）")
 
@@ -133,6 +133,7 @@ ax3.set_xlabel("成功数 k")
 ax3.set_ylabel("出現回数")
 ax3.legend()
 st.pyplot(fig3)
+
 
 
 
