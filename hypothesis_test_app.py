@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl   # ← これが必要！
 import numpy as np
 from scipy import stats
+from scipy.stats import norm
 
 # フォント設定（日本語対応）
 mpl.rcParams['font.family'] = 'IPAPGothic'  # 'Noto Sans CJK JP' でも可
@@ -131,6 +132,7 @@ ax3.set_xlabel("成功数 k")
 ax3.set_ylabel("出現回数")
 ax3.legend()
 st.pyplot(fig3)
+
 
 
 
