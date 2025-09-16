@@ -1,9 +1,11 @@
 import streamlit as st
-import numpy as np
 import matplotlib.pyplot as plt
-from scipy.stats import binom, norm
+import matplotlib as mpl   # ← これが必要！
+import numpy as np
+from scipy import stats
 
-matplotlib.rcParams['font.family'] = 'IPAPGothic'  # or 'Noto Sans CJK JP'
+# フォント設定（日本語対応）
+mpl.rcParams['font.family'] = 'IPAPGothic'  # 'Noto Sans CJK JP' でも可
 
 st.title("仮説検定シミュレーション（数学B・統計的な推測）")
 
@@ -129,6 +131,7 @@ ax3.set_xlabel("成功数 k")
 ax3.set_ylabel("出現回数")
 ax3.legend()
 st.pyplot(fig3)
+
 
 
 
