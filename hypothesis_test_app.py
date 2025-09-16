@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import matplotlib
-plt.rcParams['font.family'] = 'Meiryo'   # Windows用日本語フォント
+plt.rcParams['font.family'] = 'MS Gothic'   # Windows用日本語フォント
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
@@ -130,4 +130,5 @@ ax3.set_xlabel("成功数 k")
 ax3.set_ylabel("出現回数")
 ax3.legend()
 st.pyplot(fig3)
+
 
