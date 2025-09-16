@@ -1,13 +1,9 @@
 import streamlit as st
-import matplotlib.pyplot as plt
-import japanize_matplotlib  # ★ これを追加するだけで日本語化対応
-import numpy as np
-from scipy import stats
-
-import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import binom, norm
+
+matplotlib.rcParams['font.family'] = 'IPAPGothic'  # or 'Noto Sans CJK JP'
 
 st.title("仮説検定シミュレーション（数学B・統計的な推測）")
 
@@ -133,6 +129,7 @@ ax3.set_xlabel("成功数 k")
 ax3.set_ylabel("出現回数")
 ax3.legend()
 st.pyplot(fig3)
+
 
 
 
